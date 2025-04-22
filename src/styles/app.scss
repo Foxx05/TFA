@@ -1,9 +1,29 @@
 @import 'utils/variables';
 @import 'components/type';
 
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-image: url("../assets/images/HeaderImg.png");
     background-repeat: no-repeat;
     background-size: 100% 100vh;
     background-attachment: fixed;
+}
+
+.section{
+    color: #fafafa;
+}
+
+.title--big{
+    font-size: 57px;
+    text-align: center;
+    color: #fafafa;
+}
+
+.gridcol{
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 10px;
+    grid-template-columns: ;
 }
