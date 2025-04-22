@@ -1,2 +1,9 @@
 @import 'utils/variables';
 @import 'components/type';
+
+body{
+    background-image: url("../assets/images/HeaderImg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+}
