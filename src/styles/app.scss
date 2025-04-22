@@ -4,6 +4,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 body{
     background-image: url("../assets/images/HeaderImg.png");
     background-repeat: no-repeat;
@@ -21,9 +22,13 @@ body{
     color: #fafafa;
 }
 
+.p--center{
+    font-size: 18px;
+}
+
 .gridcol{
     margin-left: 20px;
     margin-right: 20px;
     gap: 10px;
-    grid-template-columns: ;
+    grid-template-columns: 5;
 }
