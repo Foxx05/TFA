@@ -283,9 +283,12 @@ h4{
 }
 
 .p--credits{
-    grid-column: 4/-1;
+    grid-column: 5/-1;
+    color: #fafafa;
 }
-
+.p--credits:hover{
+    color: #5e5e5e;
+}
 .gridcol{
     display: grid;
     margin-left: 20px;
