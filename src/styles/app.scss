@@ -192,26 +192,28 @@ h2{
     align-items: center;
 }
 
+.div--designf{
+    margin-bottom: 80px;
+}
+
 .p--presproj, h3{
     padding-left: 10px;
     padding-right: 10px;
     align-self: start;
 }
 
-footer{
+.div--footer{
     color: #fafafa;
-    background-color: #42585D;
+    background-color: transparent;
     padding-left: 20px;
 }
 
 .backToTop {
-    grid-column: 5/-1;
-    bottom: 20px;
-    right: 20px;
+    display: grid;
     width: 50px;
     height: 50px;
     background-color: #303030;
-    color: white;
+    color: #fafafa;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -219,7 +221,6 @@ footer{
     justify-content: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s, transform 0.3s;
-    display:  flex;
 }
 
 .backToTop:hover {
@@ -233,6 +234,13 @@ footer{
     fill: #fafafa;
 }
 
+.backToTop__btn{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: end;
+}
+
 .socials{
     display: flex;
     flex-direction: row;
@@ -240,10 +248,18 @@ footer{
     justify-content: end;
     gap: 16px;
     margin-right: 20px;
+    background-color: transparent;
+    filter: brightness(25);
+    margin-top: 18px;
 }
 
 .img-res{
     border-radius: 0;
+}
+
+.p--copy{
+    color: #fafafa;
+    margin: 20px;
 }
 
 .gridcol{
@@ -252,5 +268,5 @@ footer{
     margin-right: 20px;
     column-gap: 10px;
     row-gap: 0px;
-    grid-template-columns: 5;
+    // grid-template-columns: repeat(5, auto);
 }
