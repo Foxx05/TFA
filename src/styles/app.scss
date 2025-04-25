@@ -40,7 +40,7 @@ body{
 }
 .menu__btn::before {
     content: "☰";
-    font-size: 32px;
+    font-size: 25px;
     display: block;
     padding:6px;
     padding-top: 3px;
@@ -66,6 +66,7 @@ body{
     flex-direction: column;
     justify-content: center;
     padding-left: 24px;
+    gap: 40px;
 }
 
 .no-scroll{
@@ -111,7 +112,11 @@ body{
 .section{
     color: #fafafa;
 }
-
+.menu a{
+    color: #fafafa;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
 .banniere{
     height: 80vh;
     justify-content: center;
@@ -156,13 +161,41 @@ div{
     margin-bottom: 20px;
 }
 
-.p--presproj{
-    padding-left: 10px;
-    padding-right: 10px;
-}
+
 
 h2{
     color: #fafafa;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.btn--plus{
+    font-size: 18px;
+    text-align: center;
+    width: 75%;
+    color: #42585D;
+    border-radius: 7px;
+    margin-bottom: 18px;
+    background-color: #fafafa;
+    border: none;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.btn--plus:hover{
+    color: #fafafa;
+    background-color: #303030;
+}
+
+.div--prux, .div--dataplay, .div--designf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p--presproj, h3{
+    padding-left: 10px;
+    padding-right: 10px;
+    align-self: start;
 }
 
 .gridcol{

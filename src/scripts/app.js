@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const overlay = document.querySelector(".blur-overlay");
     const links = document.querySelectorAll(".menu__link");
     const body = document.body; // Ajout pour gérer la classe globale
+    const menuElements = document.querySelectorAll(".menu--li");
 
     function toggleMenu() {
         body.classList.toggle("menu--open"); // Ajoute/Retire sur <body>
@@ -14,6 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     menuBtn.addEventListener("click", toggleMenu);
     overlay.addEventListener("click", toggleMenu);
+    menuElements.forEach((element) => {
+        element.addEventListener("click", toggleMenu);
+    });
     
     links.forEach(link => {
         link.addEventListener("click", toggleMenu);
