@@ -219,7 +219,22 @@ div{
     padding-left: 20px;
 }
 
-
+#backToTop {
+    grid-column: 1/2;
+    margin: 20px;
+    padding: 12px 18px;
+    font-size: 0px;
+    border: none;
+    border-radius: 25px;
+    background-color: #42585D;
+    color: #fafafa;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+#backToTop:hover {
+    background-color: #fafafa;
+    color: #42585D;
+}
 
 .socials{
     display: flex;
@@ -285,17 +300,25 @@ h4{
  
     .p--credits{
         grid-column: 6/-1;
-        margin: 20px;
+        margin-top: 20px;
+        margin-right: 20px;
+        text-align: right;
     }
 
     .p--copy{
-        grid-column: 1/5;
+        grid-column: 1/4;
     }
 
     .socials{
         grid-column: 3/-1;
         font-size: 0;
     }
+
+    #backToTop {
+        grid-column: 1/2;
+        margin: 18px;
+    }
+
     .gridcol {
         grid-template-columns: repeat(7, 1fr);
         column-gap: 20px;
