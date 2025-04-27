@@ -231,9 +231,8 @@ div{
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
-#backToTop:hover {
-    background-color: #fafafa;
-    color: #42585D;
+#backToTop:hover{
+    background-color: #5e5e5e;
 }
 
 .socials{
@@ -287,6 +286,77 @@ h4{
 }
 
 @media (min-width: 768px) {
+
+    .p--presproj, h3{
+        padding-left: 55px;
+        padding-right: 55px;
+        align-self: start;
+    }
+
+    .div--footer{
+        grid-column: 1/-3;
+    }
+ 
+    .p--credits{
+        grid-column: 6/-1;
+        margin-top: 20px;
+        margin-right: 20px;
+        text-align: right;
+    }
+
+    .p--copy{
+        grid-column: 1/4;
+    }
+
+    .socials{
+        grid-column: 3/-1;
+        font-size: 0;
+    }
+
+    #backToTop {
+        grid-column: 1/2;
+        margin: 18px;
+    }
+
+    .gridcol {
+        grid-template-columns: repeat(7, 1fr);
+        column-gap: 20px;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+
+    .gridfoot{
+        grid-template-rows: repeat(10, auto);
+        column-gap: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (min-width: 980px) {
+
+    .p--center{
+        grid-column: 2/-2;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .img--center{
+        grid-column: 2/-2;
+    }
+
+    .div--prux{
+        grid-column: 2/-2;
+    }
+
+    .div--dataplay{
+        grid-column: 2/-2;
+    }
+
+    .div--designf{
+        grid-column: 2/-2;
+    }
 
     .p--presproj, h3{
         padding-left: 55px;
