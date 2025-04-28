@@ -346,6 +346,7 @@ h4{
         grid-column: 2/-2;
         margin-left: 20px;
         margin-right: 20px;
+        margin-top: 80px;
     }
 
     .img--center{
@@ -388,11 +389,13 @@ h4{
     .socials{
         grid-column: 3/-1;
         font-size: 0;
+        margin-bottom: 18px;
     }
 
     #backToTop {
         grid-column: 1/2;
         margin: 18px;
+        margin-left: 20px;
     }
 
     .gridcol {
@@ -408,5 +411,12 @@ h4{
         column-gap: 20px;
         padding-left: 50px;
         padding-right: 50px;
+    }
+}
+
+@media (min-width: 1250px) {
+    .div--prux .div--dataplay{
+        display: flex;
+        flex-direction: row;
     }
 }
