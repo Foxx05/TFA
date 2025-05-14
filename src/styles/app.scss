@@ -207,14 +207,14 @@ div{
 .ligne-haut{
     display: flex;
     flex-direction: column;
-    background-color: none;
+    background-color: transparent;
     grid-column: 1/-1;
 }
 
 .ligne-bas{
     display: flex;
     flex-direction: column;
-    background-color: none;
+    background-color: transparent;
     grid-column: 1/-1;
 }
 
@@ -339,14 +339,14 @@ h4{
     .ligne-haut{
         display: flex;
         flex-direction: column;
-        background-color: none;
+        background-color: transparent;
         grid-column: 1/-1;
     }
 
     .ligne-bas{
         display: flex;
         flex-direction: column;
-        background-color: none;
+        background-color: transparent;
         grid-column: 1/-1;
     }
 
@@ -406,14 +406,14 @@ h4{
     .ligne-haut{
         display: flex;
         flex-direction: column;
-        background-color: none;
+        background-color: transparent;
         grid-column: 2/-2;
     }
 
     .ligne-bas{
         display: flex;
         flex-direction: column;
-        background-color: none;
+        background-color: transparent;
         grid-column: 2/-2;
     }
     
