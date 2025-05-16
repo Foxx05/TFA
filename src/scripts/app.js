@@ -2,7 +2,6 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     const menuBtn = document.querySelector(".menu__btn");
-    const menu = document.querySelector(".menu");
     const overlay = document.querySelector(".blur-overlay");
     const links = document.querySelectorAll(".menu__link");
     const body = document.body; // Ajout pour gérer la classe globale
@@ -10,7 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function toggleMenu() {
         body.classList.toggle("menu--open"); // Ajoute/Retire sur <body>
-        document.body.classList.toggle("no-scroll");
+        if (window.innerWidth < 980){
+            document.body.classList.toggle("no-scroll");
+        }
     }
 
     menuBtn.addEventListener("click", toggleMenu);
@@ -34,7 +35,7 @@ backToTopButton.addEventListener('click', () => {
 });
 
 var lastScrollTop = 0; 
-var menu = document.querySelector(".menu");
+const menu = document.querySelector(".menu");
 
 var isMenuOpen = function() {
     return menu.classList.contains("menu--open");
