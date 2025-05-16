@@ -33,5 +33,24 @@ backToTopButton.addEventListener('click', () => {
     });
 });
 
+var lastScrollTop = 0; 
+var menu = document.querySelector(".menu");
+
+var isMenuOpen = function() {
+    return menu.classList.contains("menu--open");
+};
+
+window.addEventListener("scroll", function() { 
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
+    if (!isMenuOpen()) {
+        if (scrollTop > lastScrollTop) { 
+            menu.classList.add("hidden");
+        } else { 
+            menu.classList.remove("hidden");
+        }
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+
 
 

@@ -30,6 +30,11 @@ p{
     padding: 0;
     font-weight: 700;
 }
+
+.hidden{
+    top: -100px;
+}
+
 .menu{
     position: fixed;
     height: 62px;
@@ -127,6 +132,10 @@ p{
     color: #fafafa;
     text-decoration: none;
     margin-bottom: 50px;
+    cursor: pointer;
+}
+.menu a:hover{
+    color: #F4B942;
 }
 .banniere{
     height: 100vh;
@@ -376,14 +385,13 @@ h4{
 }
 
 @media (min-width: 980px) {
-
     
     .menu{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: transparent;
-        position: absolute;
+        background-color: rgba(0,0,0, 0.4);
+        position: fixed;
     }
 
     .p--nav{
