@@ -26,9 +26,8 @@ p{
     font-size: clamp(1.125rem, 0.127vw + 1.097rem, 1.25rem);
 }
 .p--nav{
-
-    margin: 0;
-    padding-left: 16px;
+    margin-left: 16px;
+    padding: 0;
     font-weight: 700;
 }
 .menu{
@@ -378,6 +377,46 @@ h4{
 
 @media (min-width: 980px) {
 
+    
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: transparent;
+        position: absolute;
+    }
+
+    .p--nav{
+        margin-left: 80px;
+    }
+
+    .menu__btn{
+        display: none;
+    }
+
+    .menu__liste{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        transform: translateX(0);
+        background-color: transparent;
+        height: 62px;
+        width: fit-content;
+        gap: 100px;
+        position: relative;
+        margin-right: 80px;
+    }
+
+    .menu a, .p--nav{
+        color: #fafafa;
+    }
+
+    .blur-overlay{
+        display: none;
+    }
+
+
     .p--center{
         grid-column: 2/-2;
         margin-left: 20px;
@@ -471,12 +510,11 @@ h4{
         margin-bottom: 80px;
     }
 
-
     .p--center, .img--center{
         grid-column: 3/-3;
     }
 
-    .section--projects {
+    .section--projects{
         display: flex;
         justify-content: center;
         align-items: center;
