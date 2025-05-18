@@ -403,19 +403,6 @@ span{
     font-weight: 600;
 }
 
-.title--big__cs {
-    text-align: center;
-    font-size: 33px;
-    font-weight: bold;
-    color: #42585D;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 600px;
-    word-wrap: break-word;
-}
-
 .title--col1{
     grid-column: 1/-1;
 }
@@ -554,6 +541,7 @@ span{
 
 .img--heaj img{
     width: 100%;
+    border-radius: 0;
 }
 .gridcol {
     display: grid;
@@ -624,9 +612,7 @@ span{
     width: 10%;
     margin-bottom: 10px;
     }
-    .title--big__cs{
-    font-size: 63px;
-    }
+
     .section{
     margin-bottom: 78px;
     }
@@ -660,6 +646,7 @@ span{
         grid-column: 1/2;
         grid-row: 1/-1;
         margin-top: 22px;
+        border-radius: 0;
     }
 
     .foot{
@@ -882,8 +869,7 @@ span{
         grid-column: 4/-1;
     }
     .p--chiffre{
-        grid-column: 1/4;
-        z-index: 10;
+        grid-column: 1/6;
         grid-row: 6/-1;
     }
     
