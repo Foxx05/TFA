@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-const backToTopButton = document.getElementById('backToTop');
+const backToTopButton = document.querySelector('.backToTop__cs');
 
 backToTopButton.addEventListener('click', () => {
     window.scrollTo({
