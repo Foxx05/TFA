@@ -445,7 +445,7 @@ span{
     margin-bottom: 23px;
     justify-self: center;
 }
-.p--chiffre{
+.p--chiffre__prux, .p--chiffre__data{
     font-size: 119px;
     align-items: center;
     font-weight: 500;
@@ -618,7 +618,7 @@ span{
     .img--pos{
         grid-column: 2/-2;
     }
-    .p--chiffre{
+    .p--chiffre__data, .p--chiffre__prux{
         font-size: 199px;
     }
     .p--probleme{
@@ -846,7 +846,7 @@ span{
         grid-column: 3/-2;
     }
     .p--col3col7{
-        grid-column: 3/-1;
+        grid-column: 3/-2;
     }
     .img--analyse{
         padding-top: 100px;
@@ -858,11 +858,15 @@ span{
     .p--col4col8{
         grid-column: 4/-1;
     }
-    .p--chiffre{
-        grid-column: 1/6;
+    .p--chiffre__prux{
+        grid-column: 1/4;
         grid-row: 6/-1;
     }
-    
+        .p--chiffre__data{
+        grid-column: 3/7;
+        grid-row: 6/-1;
+        align-self: center;
+    }
     .p--col1col5{
         grid-column: 1/5;
     }
