@@ -332,6 +332,7 @@ h4{
     margin-bottom: 18px;
     margin-top: 18px;
     transition: all .3s;
+    cursor: pointer;
 }
 .p--credits:hover{
     color: #327D7D;
@@ -757,10 +758,11 @@ span{
     }
  
     .p--credits{
-        grid-column: 6/-1;
+        grid-column: 7/-1;
         margin-top: 20px;
         margin-right: 20px;
         text-align: right;
+        margin-left: auto;
     }
 
     .p--copy{

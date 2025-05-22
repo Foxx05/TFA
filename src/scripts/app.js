@@ -25,14 +25,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-const backToTopButton = document.querySelector('.backToTop__cs');
+const fileName = window.location.pathname.split("/").pop();
+if (fileName === "csRux.html" || fileName === "csDataplay.html") {
+    const backToTopButton = document.querySelector('.backToTop__cs');
 
-backToTopButton.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth' // défilement doux
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // défilement doux
+        });
     });
-});
+};
 
 var lastScrollTop = 0; 
 const menu = document.querySelector(".menu");
