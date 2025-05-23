@@ -235,6 +235,7 @@ div{
     text-decoration: none;
     width: 100%;
     padding: 18px;
+    color: #42585D;
 }
 
 a {
@@ -289,8 +290,8 @@ a {
 .socials{
     display: flex;
     flex-direction: row;
-    align-items: end;
-    justify-content: end;
+    // align-items: end;
+    // justify-content: end;
     gap: 16px;
     margin-right: 20px;
     background-color: transparent;
@@ -318,16 +319,18 @@ a {
 
 footer {
     position: relative;
-    z-index: 1;
 }
 
 h4{
     margin: 0;
     font-size: clamp(1.5rem, 1.465vw + 1.18rem, 2.938rem);
 }
-
+.p--contact{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .p--credits{
-    grid-column: 3/-1;
+    grid-column: 5/-1;
     color: #fafafa;
     margin-bottom: 18px;
     margin-top: 18px;
@@ -782,16 +785,19 @@ span{
         grid-column: 1/2;
         width: 100%;
         grid-row: 1/-1;
+        border-radius: 0;
     }
     .img--avion2{
         grid-column: 2/3;
         width: 100%;
         grid-row: 1/-1;
+        border-radius: 0;
     }
     .img--avion3{
         grid-column: 3/4;
         width: 100%;
         grid-row: 1/-1;
+        border-radius: 0;
     }
     .gridcol {
         grid-template-columns: repeat(7, 1fr);
