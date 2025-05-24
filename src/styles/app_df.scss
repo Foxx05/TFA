@@ -21,10 +21,6 @@ section{
     font-size: 0;
 }
 
-// .section--full ~ .section {
-//   background-color: #3a3a3a;
-// }
-
 body{
     padding: 0;
     margin: 0;
@@ -230,20 +226,8 @@ img{
 
 }
 
-@media (min-width: 580px) {
 
-.section--header{
-    margin: 0;
-    padding: 0;
-}
-.gridcol {
-    padding-left: 80px;
-    padding-right: 80px;
-}
-
-}
-
-@media (min-width: 780px) {
+@media (min-width: 768px) {
 
 body{
     font-size: 20px;
