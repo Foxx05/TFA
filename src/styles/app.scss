@@ -967,7 +967,11 @@ span{
 
     .p--col3col6{
         grid-column: 3/-2;
+        margin-bottom: 20px;
+    }
+    .p--col3col6__tfa{
         background-color: #121212;
+        grid-column: 3/-2;
         margin-bottom: 20px;
     }
     .p--col3col7{
@@ -979,6 +983,12 @@ span{
     }
     
     .p--col1col5{
+        grid-column: 1/5;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    .p--col1col5__tfa{
         grid-column: 1/5;
         background-color: #121212;
         z-index: 1;

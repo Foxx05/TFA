@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuElements = document.querySelectorAll(".menu--li");
 
     function toggleMenu() {
-        body.classList.toggle("menu--open"); // Ajoute/Retire sur <body>
+        body.classList.toggle("menu--open");
         if (window.innerWidth < 980){
             document.body.classList.toggle("no-scroll");
         }
@@ -32,7 +32,7 @@ if (fileName === "csRux.html" || fileName === "csDataplay.html") {
     backToTopButton.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth' // défilement doux
+            behavior: 'smooth'
         });
     });
 };
