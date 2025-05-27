@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuBtn = document.querySelector(".menu__btn");
     const overlay = document.querySelector(".blur-overlay");
     const links = document.querySelectorAll(".menu__link");
-    const body = document.body; // Ajout pour gérer la classe globale
+    const body = document.body;
     const menuElements = document.querySelectorAll(".menu--li");
 
     function toggleMenu() {
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const fileName = window.location.pathname.split("/").pop();
-if (fileName === "csRux.html" || fileName === "csDataplay.html") {
+if (fileName === "csRux.html" || fileName === "csDataplay.html" || fileName === "csDesignF.html" || fileName === "designFiction.html" || fileName ==="pageTemoin.html") {
     const backToTopButton = document.querySelector('.backToTop__cs');
 
     backToTopButton.addEventListener('click', () => {
