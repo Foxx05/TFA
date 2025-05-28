@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //back to top
 
 const fileName = window.location.pathname.split("/").pop();
-if (fileName === "csRux.html" || fileName === "csDataplay.html" || fileName === "csDesignF.html" || fileName === "designFiction.html" || fileName ==="pageTemoin.html") {
+if (fileName === "csRux.html" || fileName === "csDataplay.html" || fileName === "csDesignF.html" || fileName === "designFiction.html" || fileName ==="pageTemoin.html"){
     const backToTopButton = document.querySelector('.backToTop__cs');
 
     backToTopButton.addEventListener('click', () => {
@@ -48,7 +48,7 @@ var isMenuOpen = function() {
     return menu.classList.contains("menu--open");
 };
 
-window.addEventListener("scroll", function() { 
+window.addEventListener("scroll", function(){ 
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
     if (!isMenuOpen()) {
         if (scrollTop > lastScrollTop) { 

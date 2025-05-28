@@ -398,6 +398,7 @@ h4{
     line-height: 105%;
     font-size: clamp(1.438rem, 2.667vw + 0.854rem, 2.938rem);
     font-weight: 600;
+    margin-bottom: clamp(2rem, 0.3472rem + 7.5556vw, 6.25rem);
 }
 
 .title--big_tfa {
@@ -660,7 +661,7 @@ span{
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // portfolio
 
     body{
-    font-size: 20px;
+        font-size: 20px;
     }
 
     .p--presproj, h3{
@@ -770,39 +771,7 @@ span{
 
 @media (min-width: 980px) {
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // portfolio
-    .menu{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: rgba(0,0,0, 0.4);
-        position: fixed;
-    }
-
-    .p--nav{
-        margin-left: 80px;
-    }
-
-    .menu__btn{
-        display: none;
-    }
-
-    .menu__liste{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: end;
-        transform: translateX(0);
-        background-color: transparent;
-        height: 62px;
-        width: fit-content;
-        gap: 100px;
-        position: relative;
-        margin-right: 80px;
-    }
-
-    .menu a, .p--nav{
-        color: #fafafa;
-    }
+    
 
     .blur-overlay{
         display: none;
@@ -910,6 +879,40 @@ span{
 
 @media (min-width: 1250px){
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // portfolio
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgba(0,0,0, 0.4);
+        position: fixed;
+    }
+
+    .p--nav{
+        margin-left: 80px;
+    }
+
+    .menu__btn{
+        display: none;
+    }
+
+    .menu__liste{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        transform: translateX(0);
+        background-color: transparent;
+        height: 62px;
+        width: fit-content;
+        gap: 100px;
+        position: relative;
+        margin-right: 80px;
+    }
+
+    .menu a, .p--nav{
+        color: #fafafa;
+    }
     main{
         max-width: 1500px;
         margin: 0 auto;
