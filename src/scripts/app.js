@@ -15,12 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
             document.body.classList.toggle("no-scroll");
         }
     }
-
-    menuBtn.addEventListener("click", toggleMenu);
-    overlay.addEventListener("click", toggleMenu);
-    menuElements.forEach((element) => {
-        element.addEventListener("click", toggleMenu);
-    });
+    if (menuBtn){
+        menuBtn.addEventListener("click", toggleMenu);
+        overlay.addEventListener("click", toggleMenu);
+        menuElements.forEach((element) => {
+            element.addEventListener("click", toggleMenu);
+        })
+    };
     
     links.forEach(link => {
         link.addEventListener("click", toggleMenu);
