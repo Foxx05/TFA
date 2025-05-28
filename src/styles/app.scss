@@ -1154,7 +1154,7 @@ span{
         grid-column: 6/-1;
     }
 
-    .gridcol {
+    .gridcol{
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(10, auto);
         column-gap: 20px;
@@ -1162,7 +1162,7 @@ span{
         padding-right: 120px;
     }
 
-    .gridpc {
+    .gridpc{
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(10, auto);
