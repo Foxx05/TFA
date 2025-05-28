@@ -58,7 +58,21 @@ window.addEventListener("scroll", function() {
         }
     }
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-    });
+});
 
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-vertical a");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            navLinks.forEach(link => link.classList.remove("active"));
+            document.querySelectorAll(`.nav-vertical a[href="#${entry.target.id}"`).forEach(link => link.classList.add("active"));
+        }
+    });
+}, { threshold: 0.5 });
+
+sections.forEach(section => observer.observe(section));
 
 
