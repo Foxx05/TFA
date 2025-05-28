@@ -1,5 +1,7 @@
 "use strict";
 
+//menu
+
 document.addEventListener("DOMContentLoaded", function () {
     const menuBtn = document.querySelector(".menu__btn");
     const overlay = document.querySelector(".blur-overlay");
@@ -24,6 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
         link.addEventListener("click", toggleMenu);
     });
 });
+
+//back to top
 
 const fileName = window.location.pathname.split("/").pop();
 if (fileName === "csRux.html" || fileName === "csDataplay.html" || fileName === "csDesignF.html" || fileName === "designFiction.html" || fileName ==="pageTemoin.html") {
