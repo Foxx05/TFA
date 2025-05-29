@@ -1106,45 +1106,61 @@ span{
         grid-column: 6/-1;
         grid-row: 2/4;
     }
+
     .img--photo2{
         grid-column: 1/4;
         grid-row: 4/5;
         width: 100%;
     }
+
     .img--plan2d{
         grid-column: 5/-1;
         grid-row: 4/6;
     }
+
+    .img--plan{
+        grid-column: 5/-1;
+        grid-row: 2/5;
+    }
+
     .img--code{
         grid-column: 5/-1;
     }
+
     .problemes-container{
         grid-column: 2/5;
     }
+
     .p--col2col8{
         grid-column: 2/-1;
         margin: 0;
     }
+
     .p--conclusion{
         grid-column: 3/-2;
     }
+
     .foot__cs{
         height: 350px;
         margin: 0;
         clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
 
     }
+
     .footer--liste__cs{
         grid-row: 5/-1;
     }
+
     .backToTop__cs{
         grid-row: 5/-1;
     }
+
     .img--heaj{
         grid-row: 5/-1;
         grid-column: 1/1;
         border-radius: 0;
     }
+    
     .img--heaj img{
         width: 75%;
         border-radius: 0;
