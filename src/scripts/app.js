@@ -44,22 +44,24 @@ if (fileName === "csRux.html" || fileName === "csDataplay.html" || fileName === 
 
 var lastScrollTop = 0; 
 const menu = document.querySelector(".menu");
+if (fileName != "designFiction.html" && fileName != "pageTemoin.html") { /* a retirer si menu */
+    var isMenuOpen = function() {
+        return menu.classList.contains("menu--open");
+    };
 
-var isMenuOpen = function() {
-    return menu.classList.contains("menu--open");
-};
 
-window.addEventListener("scroll", function(){ 
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
-    if (!isMenuOpen()) {
-        if (scrollTop > lastScrollTop) { 
-            menu.classList.add("hidden");
-        } else { 
-            menu.classList.remove("hidden");
+    window.addEventListener("scroll", function(){ 
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
+        if (!isMenuOpen()) {
+            if (scrollTop > lastScrollTop) { 
+                menu.classList.add("hidden");
+            } else { 
+                menu.classList.remove("hidden");
+            }
         }
-    }
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-});
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+};/* aussi a enlever*/
 
 
 const sections = document.querySelectorAll("section");

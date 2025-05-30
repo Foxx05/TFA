@@ -652,10 +652,11 @@ span{
     padding-right: 32px;
 }
 
-/*
 #container3D {
-    width: 80%;
-}*/
+    grid-column: 6/-1;
+    grid-row: 2/-1;
+    overflow: hidden;
+}
 
 @media (min-width: 768px) {
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // portfolio
@@ -1168,6 +1169,16 @@ span{
 
     .img--col61{
         grid-column: 6/-1;
+    }
+
+    #container3D {
+        grid-column: 5/-1;
+        grid-row: 2/-1;
+        overflow: hidden;
+    }
+
+    #container3D canvas {
+        position: relative !important;
     }
 
     .gridcol{
