@@ -5,11 +5,38 @@ import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/js
 // To allow for importing the .gltf file
 import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
 
+// Préparer le container
+const container = document.getElementById("container3D");
+const width = container.clientWidth;
+const height = container.clientHeight;
+
+// Créer la caméra avec le bon aspect
+const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+
+// Créer le renderer et l'attacher au container
+const renderer = new THREE.WebGLRenderer();
+renderer.setClearColor(0x8c888d);
+renderer.setSize(width, height);
+
+container.appendChild(renderer.domElement);
+
+
+// Gérer le resize du container
+window.addEventListener("resize", function () {
+  const width = container.clientWidth;
+  const height = container.clientHeight;
+
+  camera.aspect = width / height;
+  camera.updateProjectionMatrix();
+  renderer.setSize(width, height);
+});
+
+
 //Create a Three.JS Scene
 const scene = new THREE.Scene();
-//create a new camera with positions and angles
+/*//create a new camera with positions and angles
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
+*/
 //Keep track of the mouse position, so we can make the eye move
 let mouseX = window.innerWidth / 2;
 let mouseY = window.innerHeight / 2;
@@ -26,12 +53,16 @@ let objToRender = 'falcon8';
 //Instantiate a loader for the .gltf file
 const loader = new GLTFLoader();
 
+let bird = null;
+
 //Load the file
 loader.load(
   `./models/${objToRender}/falcon8.gltf`,
   function (gltf) {
     //If the file is loaded, add it to the scene
     object = gltf.scene;
+    // bird = object.children[0];
+    console.log(bird);
     object.traverse((child) => {
   if (child.isMesh) {
     child.rotation.y = Math.PI / 2.1; // 90° en radians
@@ -50,14 +81,18 @@ loader.load(
   }
 );
 
+/*
 //Instantiate a new renderer and set its size
 const renderer = new THREE.WebGLRenderer();
 renderer.setClearColor(0x8c888d);
-renderer.setSize(window.innerWidth, window.innerHeight);
+const width = container.clientWidth;
+const height = container.clientHeight;
+
+renderer.setSize(width, height);
 
 //Add the renderer to the DOM
 document.getElementById("container3D").appendChild(renderer.domElement);
-
+*/
 //Set how far the camera will be from the 3D model
 camera.position.z = 5;
 
@@ -83,21 +118,28 @@ function animate() {
   //Here we could add some code to update the scene, adding some automatic movement
 
   //Make the eye move
-  if (object && objToRender === "falcon8") {
-    //I've played with the constants here until it looked good 
-    object.rotation.y = -3 + mouseX / window.innerWidth * 3;
-    object.rotation.x = -1.2 + mouseY * 2.5 / window.innerHeight;
-  }
-  renderer.render(scene, camera);
+// Make the bird "look" at the mouse
+if (object && objToRender === "falcon8") {
+  const centerX = window.innerWidth / 2;
+  const centerY = window.innerHeight / 2;
+
+  const maxRotationY = Math.PI / 2;   // Max Y rotation (left/right), tweak this
+  const maxRotationX = Math.PI / 2;  // Max X rotation (up/down), tweak this
+
+  object.rotation.y = (mouseX - centerX) / centerX * maxRotationY - Math.PI/1.37;
+  object.rotation.x = (mouseY - centerY) / centerY * maxRotationX;
 }
 
+  renderer.render(scene, camera);
+}
+/*
 //Add a listener to the window, so we can resize the window and the camera
 window.addEventListener("resize", function () {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
-
+*/
 //add mouse position listener, so we can make the eye move
 document.onmousemove = (e) => {
   mouseX = e.clientX;
