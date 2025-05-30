@@ -1,3 +1,5 @@
+"use strict";
+
 import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module.js";
 import { RoundedBoxGeometry } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/geometries/RoundedBoxGeometry.js';
 
@@ -35,7 +37,7 @@ const material = new THREE.MeshStandardMaterial({
 
 // Création de la grille de cubes
 const cubes = [];
-const gridSize = 27; // au lieu de 15
+const gridSize = 27;
 const spacing = 1.1;
 
 const geometry = new RoundedBoxGeometry(1, 1, 1, 5, 0.1);
