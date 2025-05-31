@@ -979,7 +979,10 @@ span{
     .p--col2col6{
         grid-column: 2/6;
     }
-
+    .p--col2col6__csdata{
+        grid-column: 2/6;
+        margin: 0px;
+    }
     .p--col3col6{
         grid-column: 3/-2;
         margin-bottom: 20px;
@@ -1130,7 +1133,7 @@ span{
     }
 
     .problemes-container{
-        grid-column: 2/5;
+        grid-column: 2/6;
     }
 
     .p--col2col8{
