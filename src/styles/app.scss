@@ -1047,7 +1047,7 @@ span{
         margin-bottom: 73px;
     }
     .img--capt{
-        grid-column: 3/-2;
+        grid-column: 2/-1;
         grid-row: 2/4;
     }
 
@@ -1170,8 +1170,14 @@ span{
         border-radius: 0;
     }
 
-    .img--col61{
+    .img--col2col4{
+        grid-column: 2/4;
+        grid-row: 2/4;
+    }
+
+    .img--col6col1{
         grid-column: 6/-1;
+
     }
 
     #container3D{

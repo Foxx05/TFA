@@ -36,9 +36,7 @@ window.addEventListener("resize", function () {
 
 //Create a Three.JS Scene
 const scene = new THREE.Scene();
-/*//create a new camera with positions and angles
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-*/
+
 //Keep track of the mouse position, so we can make the eye move
 let mouseX = window.innerWidth / 2;
 let mouseY = window.innerHeight / 2;
@@ -83,18 +81,6 @@ loader.load(
   }
 );
 
-/*
-//Instantiate a new renderer and set its size
-const renderer = new THREE.WebGLRenderer();
-renderer.setClearColor(0x8c888d);
-const width = container.clientWidth;
-const height = container.clientHeight;
-
-renderer.setSize(width, height);
-
-//Add the renderer to the DOM
-document.getElementById("container3D").appendChild(renderer.domElement);
-*/
 //Set how far the camera will be from the 3D model
 camera.position.z = 5;
 
@@ -119,7 +105,6 @@ function animate() {
   requestAnimationFrame(animate);
   //Here we could add some code to update the scene, adding some automatic movement
 
-  //Make the eye move
 // Make the bird "look" at the mouse
 if (object && objToRender === "falcon8") {
   const centerX = window.innerWidth / 2;
@@ -134,14 +119,7 @@ if (object && objToRender === "falcon8") {
 
   renderer.render(scene, camera);
 }
-/*
-//Add a listener to the window, so we can resize the window and the camera
-window.addEventListener("resize", function () {
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
-});
-*/
+
 //add mouse position listener, so we can make the eye move
 document.onmousemove = (e) => {
   mouseX = e.clientX;
