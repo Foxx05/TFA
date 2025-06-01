@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dataplay</title>
+    <title>Credits</title>
     <meta name="description" content="Vous retrouverez ici les sources et ressources qui m'ont aidées à réaliser ce projet.">
     <meta property="og:site_name" content="Page crédits">
     <meta property="og:title" content="Crédits">
@@ -19,7 +19,7 @@
     <script src="scripts/app.js" defer></script>
     <script type="module" src="scripts/three-fond.js" defer></script>
 
-    <link rel="icon" type="image/x-icon" href="https://theocolpaert.be/projets/rethinking-ux/assets/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/images/credits/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
@@ -29,6 +29,19 @@
 
 </head>
 <body>
+
+    <nav class="menu">
+        <p class="p--nav">Théo Colpaert</p>
+        <button class="menu__btn"></button>
+        <div class="blur-overlay"></div>
+        <ul class="menu__liste">
+            <li class="menu--li"><a href="csRux.html">PRUX Case Study</a></li>
+            <li class="menu--li"><a href="csDataplay.html">Dataplay Case Study</a></li>
+            <li class="menu--li"><a href="csDesignF.html">Design Fiction Case Study </a></li>
+            <li class="menu--li"><a href="designFiction.html">Projet Design Fiction</a></li>
+        </ul>
+    </nav>
+
     <header class="banniere gridcol">
         <div class="banniere__text">
             <h1 class="title title--big">Credits</h1>
@@ -45,25 +58,29 @@
         </nav>
 
         <section id="section-1" class="section gridcol gridpc">
-            <h2 class="title__cs title--col1">1. In general</h2>
-            <p class="p p--col2col6">Le ThreeJS qui apparait dans tous les cases studies et en fond du portfolio (l'animation du tapis de cubes) a étée réalisée à l'aide de la documentation ThreeJS et de ChatGPT. Voici ce que j'ai demandé à ce dernier : </p>
+            <h2 class="title__cs title--col3">1. In general</h2>
+            <p class="p p--col2col6">Le ThreeJS qui apparait dans tous les cases studies et en fond du portfolio (l'animation du tapis de cubes) a étée réalisée à l'aide de la documentation Three.js et de ChatGPT. Voici ce que j'ai demandé à ce dernier : "Peux-tu m'aider à réaliser une grille de cubes en Three.js ? Je voudrai que les cubes montent et descendent lentement comme des vagues". J'ai ensuite adapté le code qu'il m'a donné pour arriver au résultat actuel (j'ai modifié le code au niveau du nombres de cubes présents dans la grille, de la lumière de la scène, de l'angle de la caméra (pour augmenter le relief), de la vitesse de mouvement des cubes, de la couleur du fond et j'ai arrondis les angles et arêtes des&nbsp;cubes).</p>
+            <p class="p p--col2col6">Au niveau des textes, je les ai tous rédigés moi-même. Cependant quand j'avais un doute sur la formulation, je les donnait à une IA (Copilot ou ChatGPT) pour avoir d'autres formulations. Une fois que la formulation de l'IA me plaisait, je la retravaillais pour garder une touche&nbsp;personnelle. Quand je n'étais pas certain de la traduction ou de la formulation des phrases en anglais, je faisais appel à DeepL.</p>
         </section>
 
         <section id="section-2" class="section gridcol gridpc">
             <h2 class="title__cs title--col1">2. Rethinking-UX Case Study</h2>
-            <p class="p p--col2col6">Dans ce case study, les images du local nous ont étés fournies par nos professeurs (Pauline Loroy et Melih Selamet). Le rendu 3D du local a été réalisé via <a class="p--contact" href="https://spline.design/" target="_blank">le logiciel "Spline".</a></p>
+            <p class="p p--col2col6">Dans ce case study, les images du local, et des membres du groupe, que j'ai utilisées ont étées fournies par les professeurs (Mme Loroy et Mr Selamet). Le rendu 3D du local a été réalisé via <a class="p--liencr" href="https://spline.design/" target="_blank">le logiciel "Spline".</a></p>
         </section>
 
         <section id="section-3" class="section gridcol gridpc">
             <h2 class="title__cs title--col1">3. Dataplay Case study</h2>
+            <p class="p p--col2col6">Le mock-up a été réalisé sur Canvas. Toutes les autres illustrations ont soit étées réalisées par moi ou par un autre membre de mon groupe.</p>
         </section>
 
         <section id="section-4" class="section gridcol gridpc">
             <h2 class="title__cs title--col1">4. Design Fiction Case Study</h2>
+            <p class="p p--col2col6">Le mock-up a été réalisé sur Canvas. Toutes les autres illustrations ont étées réalisées par mes soins.</p>
         </section>
         
         <section id="section-5" class="section gridcol gridpc">
-            <h2 class="title__cs title--col1">5. Design Fiction</h2>
+            <h2 class="title__cs title--col3">5. Design Fiction</h2>
+            <p class="p p--col2col6">Pour réaliser l'animation de l'oiseau avec Three;js, je me suis inspiré de <a class="p--liencr" href="https://www.youtube.com/watch?v=lGokKxJ8D2c" target="_blank">cette vidéo</a>. J'ai rencontrés des difficultés pour intégrer l'oiseau dans le projet global. J'ai dans un premier temps fait appel à l'IA. Voici ce que j'ai demandé à ChatGPT : "Voici un modèle blender que je souhaite intégrer dans ce projet, peux tu m'aider?" Une fois que j'ai récupéré le code de ChatGPT, je l'ai adapté car il ne fonctionnait pas comme je le voulais. En effet, l'oiseau était en background de mon site. C'est finalement avec l'aide des profs que le soucis a été résolu.</p>
         </section>
 
     </main>
@@ -81,7 +98,7 @@
         </div>
 
         <p class="p--copy">&#169;Théo Colpaert — 2025</p>
-        <a class="p--credits" href="index.html">Back to home</a>
+        <a class="p--credits" href="index.html">Back home</a>
     </footer>
 </body>
 

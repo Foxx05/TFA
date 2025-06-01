@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //back to top
 
 const fileName = window.location.pathname.split("/").pop();
-if (fileName === "csRux.html" || fileName === "csDataplay.html" || fileName === "csDesignF.html" || fileName === "designFiction.html" || fileName ==="pageTemoin.html"){
+if (fileName === "designFiction.html" || fileName ==="pageTemoin.html"){
     const backToTopButton = document.querySelector('.backToTop__cs');
 
     backToTopButton.addEventListener('click', () => {
@@ -44,7 +44,7 @@ if (fileName === "csRux.html" || fileName === "csDataplay.html" || fileName === 
 
 var lastScrollTop = 0; 
 const menu = document.querySelector(".menu");
-if (fileName != "designFiction.html" && fileName != "pageTemoin.html") { /* a retirer si menu */
+if (fileName != "designFiction.html" && fileName != "pageTemoin.html") {
     var isMenuOpen = function() {
         return menu.classList.contains("menu--open");
     };
@@ -61,7 +61,7 @@ if (fileName != "designFiction.html" && fileName != "pageTemoin.html") { /* a re
         }
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     });
-};/* aussi a enlever*/
+};
 
 
 const sections = document.querySelectorAll("section");
