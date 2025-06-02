@@ -22,7 +22,6 @@ renderer.setSize(width, height);
 
 container.appendChild(renderer.domElement);
 
-
 // Gérer le resize du container
 window.addEventListener("resize", function () {
   const width = container.clientWidth;
@@ -32,7 +31,6 @@ window.addEventListener("resize", function () {
   camera.updateProjectionMatrix();
   renderer.setSize(width, height);
 });
-
 
 //Create a Three.JS Scene
 const scene = new THREE.Scene();
@@ -115,8 +113,7 @@ if (object && objToRender === "falcon8") {
 
   object.rotation.y = (mouseX - centerX) / centerX * maxRotationY - Math.PI/1.37;
   object.rotation.x = (mouseY - centerY) / centerY * maxRotationX;
-}
-
+  }
   renderer.render(scene, camera);
 }
 
