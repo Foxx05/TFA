@@ -1,5 +1,21 @@
 "use strict";
 
+//Cargement page 
+
+gsap.from(".title--big", {
+  duration: 1,
+  y: 50,
+  opacity: 0,
+  ease: "power3.out",
+});
+gsap.from(".p--center__big", {
+  delay: 0.3,
+  duration: 1,
+  y: 50,
+  opacity: 0,
+  ease: "power3.out",
+});
+
 //menu
 
 document.addEventListener("DOMContentLoaded", function () {
