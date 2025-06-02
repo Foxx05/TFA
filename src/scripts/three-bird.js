@@ -17,7 +17,7 @@ const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
 
 // Créer le renderer et l'attacher au container
 const renderer = new THREE.WebGLRenderer();
-renderer.setClearColor(0x8c888d);
+renderer.setClearColor(0xA0B8D1);
 renderer.setSize(width, height);
 
 container.appendChild(renderer.domElement);
