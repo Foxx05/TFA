@@ -14,7 +14,9 @@ gsap.from(".p--center__big",{
   opacity: 0,
   ease: "power3.out",
 });
-//img 
+
+//lignes projets portfolio
+
 gsap.from(".ligne-haut",{
   scrollTrigger: {
     trigger: ".ligne-haut",
@@ -27,7 +29,6 @@ gsap.from(".ligne-haut",{
   ease: "power3.out",
 });
 
-
 gsap.from(".ligne-bas",{
   scrollTrigger: {
     trigger: ".ligne-bas",
@@ -39,6 +40,7 @@ gsap.from(".ligne-bas",{
   opacity: 0,
   ease: "power3.out",
 });
+
 //menu
 
 document.addEventListener("DOMContentLoaded", function () {
