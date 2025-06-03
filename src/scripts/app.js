@@ -3,44 +3,46 @@
 //Anim titres
 
 gsap.from(".title--big", {
-  duration: 1,
-  y: 50,
-  opacity: 0,
-  ease: "power3.out",
+    duration: 1,
+    y: 50,
+    opacity: 0,
+    ease: "power3.out",
 });
 gsap.from(".p--center__big",{
-  delay: 0.3,
-  duration: 1,
-  y: 50,
-  opacity: 0,
-  ease: "power3.out",
+    delay: 0.3,
+    duration: 1,
+    y: 50,
+    opacity: 0,
+    ease: "power3.out",
 });
 
-//lignes projets portfolio
+    //lignes projets portfolio
 
 gsap.from(".ligne-haut",{
-  scrollTrigger: {
-    trigger: ".ligne-haut",
-    start: "top 80%",
-    toggleActions: "play none none none"
-  },
-  duration: 1,
-  x: 200,
-  opacity: 0,
-  ease: "power3.out",
+    scrollTrigger: {
+        trigger: ".ligne-haut",
+        start: "top 80%",
+        toggleActions: "play none none none"
+    },
+    duration: 1,
+    x: 200,
+    opacity: 0,
+    ease: "power3.out",
 });
 
 gsap.from(".ligne-bas",{
-  scrollTrigger: {
-    trigger: ".ligne-bas",
-    start: "top 80%",
-    toggleActions: "play none none none"
-  },
-  duration: 1,
-  x: -200,
-  opacity: 0,
-  ease: "power3.out",
+    scrollTrigger: {
+        trigger: ".ligne-bas",
+        start: "top 80%",
+        toggleActions: "play none none none"
+    },
+    duration: 1,
+    x: -200,
+    opacity: 0,
+    ease: "power3.out",
 });
+
+
 
 //menu
 

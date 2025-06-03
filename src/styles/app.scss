@@ -36,6 +36,7 @@ canvas{
     bottom: 0;
     z-index: -1;
     height: 100dvh;
+    grid-column: 1/-1;
 }
 
 p{
@@ -429,6 +430,7 @@ span{
     color: #121212;
     text-decoration: none;
     text-align: center;
+    margin-bottom: 23px;
 }
 
 .btn--temoins:hover, .btn--temoins2:hover{
@@ -575,9 +577,6 @@ span{
     grid-column: 1/-1;
     padding: 0;
     margin-top: 20px;
-}
-
-.footer--el__cs{
     margin-bottom: 16px;
     color: #fafafa;
 }
@@ -621,7 +620,7 @@ span{
     height: 24px;
     fill: white;
 }
-.img--heaj{
+/*.img--heaj{
     grid-column: 1/3;
     grid-row: 2/-1;
     width: 100%;
@@ -638,7 +637,7 @@ span{
 .img--heaj img{
     width: 100%;
     border-radius: 0;
-}
+}*/
 .gridcol{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -756,12 +755,12 @@ span{
         font-size: 20px;
     }
 
-    .img--heaj{
+    /*.img--heaj{
         grid-column: 1/2;
         grid-row: 1/-1;
         margin-top: 22px;
         border-radius: 0;
-    }
+    }*/
 
     .foot{
         align-content: center;
@@ -1162,7 +1161,7 @@ span{
         grid-row: 5/-1;
     }
 
-    .img--heaj{
+    /*.img--heaj{
         grid-row: 5/-1;
         grid-column: 1/1;
         border-radius: 0;
@@ -1171,7 +1170,7 @@ span{
     .img--heaj img{
         width: 75%;
         border-radius: 0;
-    }
+    }*/
 
     .img--col2col4{
         grid-column: 2/4;
