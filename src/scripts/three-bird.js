@@ -94,8 +94,6 @@ scene.add(ambientLight);
 //This adds controls to the camera, so we can rotate / zoom it with the mouse
 if (objToRender === "falcon8") {
   controls = new OrbitControls(camera, renderer.domElement);
-  controls.minDistance = 2;  // Distance minimale de la caméra par rapport au modèle
-  controls.maxDistance = 10; // Distance maximale de la caméra par rapport au modèle
 }
 
 //Render the scene
