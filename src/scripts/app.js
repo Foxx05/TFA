@@ -1,6 +1,7 @@
 "use strict";
 
 //Anim titres
+
 gsap.from(".title--big", {
   duration: 1,
   y: 50,
