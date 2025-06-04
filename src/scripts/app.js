@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+//Anim titres
 if (document.querySelector('.title--big')) {
     gsap.from(".title--big", {
         duration: 1,
@@ -121,6 +122,7 @@ if (backToTopButton) {
 
 var lastScrollTop = 0;
 const body = document.body;
+
 // Détection du nom de fichier (ex: pour désactiver sur certaines pages)
 const fileName = window.location.pathname.split("/").pop();
 
