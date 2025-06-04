@@ -53,6 +53,27 @@ if (document.querySelector('.ligne-bas')) {
     });
 }
 
+//anim flèche invit scroll
+
+const scrollDown = document.querySelector('.scroll-down');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 150) {
+        scrollDown.classList.add('hidden');
+    } else {
+        scrollDown.classList.remove('hidden');
+    }
+});
+
+// Event click → scroll vers la 1ère section
+scrollDown.addEventListener('click', () => {
+    const targetSection = document.querySelector('section');
+    if (targetSection) {
+        targetSection.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+});
 
 //menu
 

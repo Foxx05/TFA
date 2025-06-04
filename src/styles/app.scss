@@ -889,6 +889,56 @@ span{
 @media (min-width: 1250px){
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // portfolio
 
+.scroll-down {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fafafa;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-down.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.scroll-circle {
+    animation: rotate 1.5s linear infinite;
+    transform-origin: 25px 25px;
+}
+
+.scroll-down path {
+    animation: bounce 2s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-8px);
+    }
+    60% {
+        transform: translateY(-4px);
+    }
+}
+
     .menu{
         display: flex;
         flex-direction: row;
