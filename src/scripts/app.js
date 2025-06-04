@@ -1,5 +1,7 @@
 "use strict";
 
+import{gsap} from "gsap";
+gsap.registerPlugin(ScrollTrigger);
 //Anim titres
 
 gsap.from(".title--big", {
@@ -41,7 +43,6 @@ gsap.from(".ligne-bas",{
     opacity: 0,
     ease: "power3.out",
 });
-
 
 
 //menu
@@ -107,6 +108,7 @@ if (fileName != "designFiction.html" && fileName != "pageTemoin.html") {
     });
 };
 
+//nav verticale
 
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-vertical a");
