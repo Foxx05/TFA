@@ -418,7 +418,12 @@ footer{
 span{
     color: #f4b942;
 }
-
+.img--falcon{
+    filter: drop-shadow(0 0 2px #fafafa);
+}
+.img--capt{
+    filter: drop-shadow(0 0 2px #fafafa);
+}
 .btn--temoins, .btn--temoins2{
     grid-column: 1/-1;  
     font-size: clamp(1rem, 0.9028rem + 0.4444vw, 1.25rem);
@@ -442,9 +447,10 @@ span{
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     position: relative;
-    margin-top: 73px;
+    margin-top: 110px;
     margin-bottom: 73px;
     font-size: 0;
+    border-radius: 0;
 }
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // case study
 
@@ -647,11 +653,6 @@ span{
     padding-right: 32px;
 }
 
-#container3D{
-    grid-column: 6/-1;
-    grid-row: 2/-1;
-    overflow: hidden;
-}
 
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // credits
 
@@ -877,6 +878,11 @@ span{
         padding-left: 50px;
         padding-right: 50px;
     }
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // TFA
+    .img--capt{
+        filter: drop-shadow(0 0 5px #fafafa);
+    }
+
 
 }
 
@@ -975,6 +981,9 @@ span{
         width: 100vw;
         border-radius: 0
     }
+    .img--falcon{
+        display: none;
+    }
     .p--col2col5{
         grid-column: 2/6;
     }
@@ -1048,6 +1057,7 @@ span{
         grid-column: 3/-2;
         margin-bottom: 73px;
     }
+
     .img--capt{
         grid-column: 2/-1;
         grid-row: 2/4;
