@@ -644,24 +644,7 @@ span{
     height: 24px;
     fill: white;
 }
-/*.img--heaj{
-    grid-column: 1/3;
-    grid-row: 2/-1;
-    width: 100%;
-    cursor: pointer;
-    transition: opacity 0.3s transition 0.3s;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(98%) saturate(7%) hue-rotate(124deg) brightness(103%) contrast(102%);
-    border-radius: 0;
-}
-.img--heaj:hover{
-    filter: none;
-    opacity: 1;
-}
 
-.img--heaj img{
-    width: 100%;
-    border-radius: 0;
-}*/
 .gridcol{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
