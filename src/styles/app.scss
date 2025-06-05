@@ -495,7 +495,7 @@ span{
 
 .title__cs{
     line-height: 105%;
-    font-size: 23px;
+    font-size: clamp(1.4375rem, 1.2431rem + 0.8889vw, 1.9375rem);
     font-weight: 600;
 }
 
