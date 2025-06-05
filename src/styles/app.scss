@@ -458,6 +458,11 @@ span{
     font-size: 0;
     border-radius: 0;
 }
+
+.img--temoins{
+    grid-column: 2/-2;
+    margin-bottom: 40px;
+}
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // case study
 
 .scroll-down{
@@ -565,6 +570,11 @@ span{
     grid-column: 1/-1;  
     cursor: pointer;
 }
+
+.img--avion1, .img--avion2, .img--avion3{
+    border-radius: 0;
+}
+
 
 /* footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer*/
 .foot_cs{
@@ -858,19 +868,16 @@ span{
         grid-column: 1/2;
         width: 100%;
         grid-row: 1/-1;
-        border-radius: 0;
     }
     .img--avion2{
         grid-column: 2/3;
         width: 100%;
         grid-row: 1/-1;
-        border-radius: 0;
     }
     .img--avion3{
         grid-column: 3/4;
         width: 100%;
         grid-row: 1/-1;
-        border-radius: 0;
     }
     .gridcol{
         grid-template-columns: repeat(7, 1fr);
