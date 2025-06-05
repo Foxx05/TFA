@@ -206,13 +206,12 @@ h2{
     background-color: #fafafa;
     border: none;
     transition: all .3s;
-    cursor: pointer;
-    padding: 18px 0;
     display: flex;
     text-decoration: none;
     width: 80%;
     padding: 18px;
     color: #42585D;
+    cursor: pointer;
 }
 
 a{
@@ -689,6 +688,9 @@ span{
         grid-column: 1/-1;
     }
 
+    .btn--plus{
+        width: 60%;
+    }
     .div--footer{
         grid-column: 1/-3;
     }
