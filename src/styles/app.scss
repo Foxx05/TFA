@@ -4,12 +4,6 @@
 
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // portfolio
 
-.sora-semiBold{
-  font-family: "Sora", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
 
 *{
     box-sizing: border-box;
@@ -207,7 +201,6 @@ h2{
     font-size: clamp(1.125rem, 0.127vw + 1.097rem, 1.25rem);
     align-items: center;
     justify-content: center;
-    width: 75%;
     border-radius: 7px;
     margin-bottom: 18px;
     background-color: #fafafa;
@@ -217,7 +210,7 @@ h2{
     padding: 18px 0;
     display: flex;
     text-decoration: none;
-    width: 100%;
+    width: 80%;
     padding: 18px;
     color: #42585D;
 }
