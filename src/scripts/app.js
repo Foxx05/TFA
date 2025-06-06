@@ -24,7 +24,6 @@ if (document.querySelector('.p--center__big')) {
     });
 }
 
-
 if (document.querySelector('.ligne-haut')) {
     gsap.from(".ligne-haut", {
         scrollTrigger: {
@@ -119,7 +118,7 @@ if (backToTopButton) {
 var lastScrollTop = 0;
 const body = document.body;
 
-// Détection du nom de fichier (ex: pour désactiver sur certaines pages)
+// Détection du nom de fichier (aide de ChatGPT pour éviter erreur console sur les autres pages)
 const fileName = window.location.pathname.split("/").pop();
 
 if (fileName !== "designFiction.html" && fileName !== "pageTemoin.html") {
@@ -163,7 +162,7 @@ window.addEventListener('load', () => {
 });
 
 
-//Anim textes df-cs df
+//Anim textes df - page témoin df
 
 gsap.registerPlugin(ScrollTrigger);
 
