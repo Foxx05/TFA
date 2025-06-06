@@ -161,3 +161,22 @@ if (sections.length > 0 && navLinks.length > 0) {
 window.addEventListener('load', () => {
     ScrollTrigger.refresh();
 });
+
+
+//Anim textes df-cs df
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray('.animate').forEach(elem => {
+  gsap.from(elem, {
+    opacity: 0,
+    y: 100,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: elem,
+      start: "top 80%",
+      toggleActions: "play none none none"
+    }
+  });
+});

@@ -310,7 +310,7 @@ footer{
     color: #fafafa;
     margin: 20px;
     margin-right: 0;
-    grid-column: 1/5;
+    grid-column: 1/-1;
 }
 
 .title--h4{
@@ -323,11 +323,13 @@ footer{
     margin-bottom: 20px;
 }
 .p--credits{
-    grid-column: 5/-1;
+    grid-column: 1/-1;
     color: #fafafa;
+    margin-left: 18px;
     margin-bottom: 18px;
     margin-top: 18px;
     transition: all .3s;
+    text-decoration: underline;
     cursor: pointer;
 }
 .p--credits:hover{
@@ -1165,17 +1167,6 @@ span{
         grid-row: 5/-1;
     }
 
-    /*.img--heaj{
-        grid-row: 5/-1;
-        grid-column: 1/1;
-        border-radius: 0;
-    }
-    
-    .img--heaj img{
-        width: 75%;
-        border-radius: 0;
-    }*/
-
     .img--col2col4{
         grid-column: 2/4;
         grid-row: 2/4;
@@ -1183,7 +1174,6 @@ span{
 
     .img--col6col1{
         grid-column: 6/-1;
-
     }
 
     #container3D{
@@ -1210,6 +1200,8 @@ span{
         color: #fafafa;
         transition: opacity 0.3s ease;
     }
+
+    // Anim flèche qui sautille
 
     .scroll-down.hidden {
         opacity: 0;
