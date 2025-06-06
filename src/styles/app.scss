@@ -214,14 +214,14 @@ h2{
     cursor: pointer;
 }
 
-a{
-    text-decoration: none;
-}
-
 .btn--plus:hover{
     color: #fafafa;
     background-color: #56767e;
     transform: scale(1.1);
+}
+
+a{
+    text-decoration: none;
 }
 
 .ligne-haut{
@@ -568,6 +568,22 @@ span{
     border-radius: 0;
 }
 
+.btn--projet{
+    grid-column: 1/-1;
+    text-align: center;
+    margin-top: 80px;
+    padding: 9px;
+    background-color: #fafafa;
+    color: #42585D;
+    border-radius: 25px;
+    transition: all .3s;
+    margin-bottom: 20px;
+}
+.btn--projet:hover{
+    color: #fafafa;
+    background-color: #56767e;
+}
+
 /* footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer*/
 .foot_cs{
     background-color: rgba(24, 24, 24, 0.5);
@@ -766,6 +782,9 @@ span{
     .backToTop__cs{
         grid-column: 7/-1;
     }
+    .btn--projet{
+        grid-column: 2/-2;
+    }
     .gridcol{
         grid-template-columns: repeat(7, 1fr);
         column-gap: 20px;
@@ -856,6 +875,10 @@ span{
         grid-column: 3/4;
         width: 100%;
         grid-row: 1/-1;
+    }
+
+    .btn--projet{
+        grid-column: 3/-3;
     }
     .gridcol{
         grid-template-columns: repeat(7, 1fr);
