@@ -418,12 +418,11 @@ footer{
 span{
     color: #f4b942;
 }
-.img--falcon{
+
+.img--falcon, .img--falcon__cs, .img--capt{
     filter: drop-shadow(0 0 2px #fafafa);
 }
-.img--capt{
-    filter: drop-shadow(0 0 2px #fafafa);
-}
+
 .btn--temoins, .btn--temoins2{
     grid-column: 1/-1;  
     font-size: clamp(1rem, 0.9028rem + 0.4444vw, 1.25rem);
@@ -568,7 +567,6 @@ span{
 .img--avion1, .img--avion2, .img--avion3{
     border-radius: 0;
 }
-
 
 /* footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer*/
 .foot_cs{
@@ -874,10 +872,9 @@ span{
         padding-right: 50px;
     }
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // TFA
-    .img--capt{
+    .img--capt, .img--falcon__cs{
         filter: drop-shadow(0 0 5px #fafafa);
     }
-
 
 }
 
@@ -1186,6 +1183,8 @@ span{
         position: relative !important;
     }
 
+    // Anim flèche qui sautille
+
     .scroll-down {
         position: fixed;
         bottom: 40px;
@@ -1200,8 +1199,6 @@ span{
         color: #fafafa;
         transition: opacity 0.3s ease;
     }
-
-    // Anim flèche qui sautille
 
     .scroll-down.hidden {
         opacity: 0;

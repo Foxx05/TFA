@@ -3,7 +3,7 @@
 import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module.js";
 import { RoundedBoxGeometry } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/geometries/RoundedBoxGeometry.js';
 
-
+// Pour faire le fond en 3D, j'ai d'abord essayé en lisant la doc de Three.js mais je n'ai pas réussi à avoir un 
 // Scène
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x113022); // fond
