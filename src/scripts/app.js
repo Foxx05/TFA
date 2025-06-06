@@ -78,7 +78,6 @@ if (scrollDown) {
 //Menu
 document.addEventListener("DOMContentLoaded", function () {
     const menuBtn = document.querySelector(".menu__btn");
-    const overlay = document.querySelector(".blur-overlay");
     const links = document.querySelectorAll(".menu__link");
     const body = document.body;
     const menuElements = document.querySelectorAll(".menu--li");
@@ -92,9 +91,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (menuBtn) {
         menuBtn.addEventListener("click", toggleMenu);
-    }
-    if (overlay) {
-        overlay.addEventListener("click", toggleMenu);
     }
     if (menuElements.length > 0) {
         menuElements.forEach((element) => {
