@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll(".menu__link");
     const body = document.body;
     const menuElements = document.querySelectorAll(".menu--li");
+    const menu = document.querySelector(".menu");
 
     function toggleMenu() {
         body.classList.toggle("menu--open");
@@ -91,16 +92,34 @@ document.addEventListener("DOMContentLoaded", function () {
     if (menuBtn) {
         menuBtn.addEventListener("click", toggleMenu);
     }
+
     if (menuElements.length > 0) {
         menuElements.forEach((element) => {
             element.addEventListener("click", toggleMenu);
         });
     }
+
     if (links.length > 0) {
         links.forEach(link => {
             link.addEventListener("click", toggleMenu);
         });
     }
+
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", function () {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+        if (!body.classList.contains("menu--open")) {
+            if (scrollTop > lastScrollTop && scrollTop > 50) {
+                menu.classList.add("menu--hidden");
+            } else {
+                menu.classList.remove("menu--hidden");
+            }
+        }
+
+        lastScrollTop = Math.max(0, scrollTop);
+    });
 });
 
 //Back to top
