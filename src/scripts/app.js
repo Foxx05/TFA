@@ -75,10 +75,8 @@ if (scrollDown) {
 }
 
 //Menu
-document.addEventListener("DOMContentLoaded", function () {
     const menuBtn = document.querySelector(".menu__btn");
     const links = document.querySelectorAll(".menu__link");
-    const body = document.body;
     const menuElements = document.querySelectorAll(".menu--li");
     const menu = document.querySelector(".menu");
 
@@ -105,11 +103,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    let lastScrollTop = 0;
-
     window.addEventListener("scroll", function () {
         const scrollTop = window.scrollY || document.documentElement.scrollTop;
-
+        const fileName = window.location.pathname.split("/").pop();
+    if (fileName !== "designFiction.html" && fileName !== "pageTemoin.html") {
         if (!body.classList.contains("menu--open")) {
             if (scrollTop > lastScrollTop && scrollTop > 50) {
                 menu.classList.add("menu--hidden");
@@ -119,8 +116,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         lastScrollTop = Math.max(0, scrollTop);
+    }
     });
-});
 
 //Back to top
 const backToTopButton = document.querySelector('.backToTop__cs');
@@ -182,7 +179,6 @@ window.addEventListener('load', () => {
 
 
 //Anim textes df - page témoin df
-
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.utils.toArray('.animate').forEach(elem => {
