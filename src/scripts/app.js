@@ -75,49 +75,48 @@ if (scrollDown) {
 }
 
 //Menu
-    const menuBtn = document.querySelector(".menu__btn");
-    const links = document.querySelectorAll(".menu__link");
-    const menuElements = document.querySelectorAll(".menu--li");
-    const menu = document.querySelector(".menu");
+const menuBtn = document.querySelector(".menu__btn");
+const links = document.querySelectorAll(".menu__link");
+const menuElements = document.querySelectorAll(".menu--li");
+const menu = document.querySelector(".menu");
 
-    function toggleMenu() {
-        body.classList.toggle("menu--open");
-        if (window.innerWidth < 980) {
-            body.classList.toggle("no-scroll");
-        }
+function toggleMenu() {
+    body.classList.toggle("menu--open");
+    if (window.innerWidth < 980) {
+        body.classList.toggle("no-scroll");
     }
+}
 
-    if (menuBtn) {
-        menuBtn.addEventListener("click", toggleMenu);
-    }
+if (menuBtn) {
+    menuBtn.addEventListener("click", toggleMenu);
+}
 
-    if (menuElements.length > 0) {
-        menuElements.forEach((element) => {
-            element.addEventListener("click", toggleMenu);
-        });
-    }
+if (menuElements.length > 0) {
+    menuElements.forEach((element) => {
+        element.addEventListener("click", toggleMenu);
+    });
+}
 
-    if (links.length > 0) {
-        links.forEach(link => {
-            link.addEventListener("click", toggleMenu);
-        });
-    }
+if (links.length > 0) {
+    links.forEach(link => {
+        link.addEventListener("click", toggleMenu);
+    });
+}
 
-    window.addEventListener("scroll", function () {
-        const scrollTop = window.scrollY || document.documentElement.scrollTop;
-        const fileName = window.location.pathname.split("/").pop();
+window.addEventListener("scroll", function () {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const fileName = window.location.pathname.split("/").pop();
     if (fileName !== "designFiction.html" && fileName !== "pageTemoin.html") {
         if (!body.classList.contains("menu--open")) {
             if (scrollTop > lastScrollTop && scrollTop > 50) {
-                menu.classList.add("menu--hidden");
+            menu.classList.add("menu--hidden");
             } else {
-                menu.classList.remove("menu--hidden");
+            menu.classList.remove("menu--hidden");
             }
         }
-
         lastScrollTop = Math.max(0, scrollTop);
     }
-    });
+});
 
 //Back to top
 const backToTopButton = document.querySelector('.backToTop__cs');
